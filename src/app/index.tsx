@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
+  const message: string = "Hello Github Actions";
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <Text>Message: {message}</Text>
     </View>
   );
 }
