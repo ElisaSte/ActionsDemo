@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   const message: string = "Hello Github Actions";
+  useEffect(() => {
+    if (Math.random() > 0.5) {
+      console.log("Over 50%");
+    }
+  });
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Message: {message}</Text>
